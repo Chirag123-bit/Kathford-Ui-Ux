@@ -9,44 +9,47 @@
 </head>
 
 <body>
+    <fieldset>
+        <legend>Personal Detail</legend>
+        <form>
+            <label for="salutation">Salutation</label>
+            <br>
+            <select name="salutation" id="salutation" required>
+                <option value="0" hidden disabled selected>--None--</option>
+                <option value="1">Mr.</option>
+                <option value="2">Mrs.</option>
+                <option value="3">Ms</option>
+            </select>
+            <br>
+            <br>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" required minlength="" disabled readonly>
+            <br>
+            <br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" required>
+            <br><br>
+            <label for="">Gender</label>
+            <input type="radio" name="gender" id="m" value="m" required>
+            <label for="m">Male</label>
+            <input type="radio" name="gender" id="f" value="f">
+            <label for="f">Female</label>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
 
-    <form action="">
-        <label for="salutation">Salutation</label>
-        <br>
-        <select name="salutation" id="salutation" required>
-            <option value="0" hidden disabled selected>--None--</option>
-            <option value="1">Mr.</option>
-            <option value="2">Mrs.</option>
-            <option value="3">Ms</option>
-        </select>
-        <br>
-        <br>
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" required minlength="" disabled readonly>
-        <br>
-        <br>
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" required>
-        <br><br>
-        <label for="">Gender</label>
-        <input type="radio" name="gender" id="m" value="m" required>
-        <label for="m">Male</label>
-        <input type="radio" name="gender" id="f" value="f">
-        <label for="f">Female</label>
-        <br><br>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
-        <br><br>
+            <label for="dob">Date Of Birth</label>
+            <input type="date" name="dob" id="dob" max="2023-02-21" min="2000-01-01" required>
 
-        <label for="dob">Date Of Birth</label>
-        <input type="date" name="dob" id="dob" max="2023-02-21" min="2000-01-01" required>
+            <br><br>
+            <label for="add">Address</label><br>
+            <textarea name="add" id="add" cols="30" rows="2" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
 
-        <br><br>
-        <label for="add">Address</label><br>
-        <textarea name="add" id="add" cols="30" rows="2" required></textarea>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
+    </fieldset>
 
 </body>
 
