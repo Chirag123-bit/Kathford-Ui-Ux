@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        .cls {
+            padding: 20px;
+            margin: 20px;
+            width: 200px;
+            font-size: 30px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.2s all ease;
+        }
+
+        #one {
+            background-color: rgb(62, 62, 244);
+            color: white;
+        }
+
+        #one:hover {
+            transition: 0.2s all ease;
+            background-color: transparent;
+            color: black;
+            outline: 3px solid rgb(62, 62, 244);
+        }
+
+        #two {
+            background-color: rgb(62, 62, 244);
+            color: white;
+        }
+
+        #two:hover {
+            transition: 0.2s all ease;
+            background-color: rgb(8, 8, 171);
+            /* transform: scale(0.9); */
+            transform: scale(0.9)
+        }
+
+        #three {
+            background-color: orange;
+            color: white;
+        }
+
+        #three:hover {
+            transform: scale(1.2)
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div>
+            <button class="cls" id="one">One</button>
+            <button class="cls" id="two">Two</button>
+            <button class="cls" id="three">Three</button>
+        </div>
+    </center>
+</body>
+
+</html>
