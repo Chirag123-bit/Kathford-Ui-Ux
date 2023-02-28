@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background: rgb(2, 0, 36); */
+            /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%); */
+            background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* height: 100vh; */
+        }
+
+        #main {
+            width: 60%;
+            margin: 3.55rem auto;
+            /* border: 1px solid red; */
+            /* min-height: 100vh; */
+            display: flex;
+        }
+
+        #image-container {
+            width: 50%;
+            background-image: url("reg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #form-container {
+            width: 50%;
+            padding: 2rem;
+            background-color: white;
+        }
+
+        #form-container h2 {
+            text-align: center;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            outline: 1px solid rgb(87, 75, 75);
+        }
+
+        .input-group {
+            margin: 2rem 0;
+        }
+
+        .input-group2 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            /* justify-content: ; */
+            /* text-align: center; */
+        }
+
+        .input-group2 input {
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        .input-group input {
+            margin: 0.5rem 0;
+        }
+
+        label {
+            font-size: 1.1rem;
+        }
+
+        button {
+            padding: 0.9rem 2.5rem;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(29, 29, 211);
+            color: white;
+            font-size: 1rem;
+        }
+
+        @media (max-width:1300px) {
+            #main {
+                width: 70%;
+            }
+        }
+
+        @media (max-width:1100px) {
+            #main {
+                width: 80%;
+            }
+        }
+
+        @media (max-width:900px) {
+            #main {
+                width: 95%;
+            }
+        }
+
+        @media (max-width:750px) {
+            #image-container {
+                display: none;
+            }
+
+            #form-container {
+                width: 60%;
+                margin: auto;
+            }
+
+            .center {
+                text-align: center;
+            }
+        }
+
+        @media (max-width:600px) {
+
+            #form-container {
+                width: 80%;
+            }
+        }
+
+        @media (max-width:450px) {
+
+            #form-container {
+                width: 95%;
+            }
+        }
+
+        @media (max-width:350px) {
+
+            #form-container {
+                width: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="image-container"></div>
+        <div id="form-container">
+            <h2>Registration Form</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Chirag Simkhada">
+                </div>
+                <div class="input-group">
+                    <label for="name">Email Address</label>
+                    <input type="text" id="name" name="name" placeholder="example@gmail.com">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="input-group">
+                    <label for="cpassword">Confirm Password</label>
+                    <input type="password" id="cpassword" name="cpassword">
+                </div>
+                <div class="input-group2">
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree">By Signing Up, You agree to the <br> <a href="#">Play Term of Service</a>
+                    </label>
+                </div>
+
+                <div class="center">
+
+                    <button>Register </button>
+                </div>
+
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
