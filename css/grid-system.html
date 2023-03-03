@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        col {
+            height: 200px;
+        }
+
+        .navbar-brand img {
+            width: 3rem;
+        }
+
+        .image-container img {
+            max-width: 40rem;
+        }
+
+        .hero-label {
+            font-size: 1.4rem;
+            line-height: 4.8rem;
+            color: rgb(59, 59, 241);
+            font-weight: 400;
+        }
+
+        .hero-label-bold {
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            font-weight: 600;
+            text-align: center;
+            color: orange;
+        }
+
+        .hero-para {
+            margin-top: 1rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./tesla-logo.png" alt="logo">
+                <span>Tesla</span>
+            </a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="hero" class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-container">
+                    <div class="hero-label">
+                        Technology made affordable
+                    </div>
+                    <div class="hero-label-bold">
+                        Transform your digital presence with Tesla
+                    </div>
+                    <div class="hero-para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolorum ipsa aut magni animi
+                        ratione
+                        autem neque pariatur alias magnam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolorum ipsa aut magni animi
+                        ratione
+                        autem neque pariatur alias magnam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolorum ipsa aut magni animi
+                        ratione
+                        autem neque pariatur alias magnam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolorum ipsa aut magni animi
+                        ratione
+                        autem neque pariatur alias magnam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolorum ipsa aut magni animi
+                        ratione
+                        autem neque pariatur alias magnam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolorum ipsa aut magni animi
+                        ratione
+                        autem neque pariatur alias magnam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolorum ipsa aut magni animi
+                        ratione
+                        autem neque pariatur alias magnam.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 image-container">
+                <img src="./car.svg" alt="Car Image" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <section class="faq container">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
