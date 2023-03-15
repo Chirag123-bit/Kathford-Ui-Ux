@@ -6,14 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #container {
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
 
 </head>
 
 <body>
 
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit asperiores sunt reiciendis impedit excepturi,
+        quaerat nesciunt dolorum magnam. Quae, culpa.
+    </p>
+
+    <button id="changeColor" onclick="changeClr()">Red</button>
+
+    <div id="container">
+        <img src="" alt="image" style="max-width: 100%;" id="image">
+    </div>
+    <button id="btnImage" onclick="addImage()">Add Image</button>
 
 
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
+    <script src="./dom.js"></script>
 </body>
 
 </html>
