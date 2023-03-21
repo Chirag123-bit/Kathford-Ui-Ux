@@ -7,17 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #container {
-            border: 1px solid black;
-            width: 200px;
-            height: 200px;
+        .container {
+            position: relative;
+            width: max-content;
+        }
+
+        .container i {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .error {
+            outline-color: red;
+        }
+
+        .success {
+            outline-color: green;
+        }
+
+        .blue-text {
+            color: blue
+        }
+
+        .blue-text::after {
+            content: "|";
+            display: inline;
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
-
+    <!-- 
     <p id="para">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit asperiores sunt reiciendis impedit excepturi,
         quaerat nesciunt dolorum magnam. Quae, culpa.
@@ -31,8 +56,95 @@
     <button id="btnImage" onclick="addImage()">Add Image</button>
 
 
+    <script src="./dom.js"></script> -->
     <!-- <script src="./script.js"></script> -->
-    <script src="./dom.js"></script>
+
+
+    <div class="container">
+        <input type="password" name="password" id="password">
+        <i class="fa-solid fa-eye-slash" onclick="showPassword()" id="pswd-icon"></i>
+    </div>
+    <input type="password" name="cpassword" id="cpassword" style="margin-top: 1rem;" onkeyup="checkPassword()">
+
+    <br><br><br><br><br>
+    <div class="text-box">
+        <span> I am a </span>
+        <span class="blue-text" id="addAnim"> </span>
+    </div>
+
+    <script>
+
+        let text = "Freelancer"
+        let i = 0
+        let type = "add"
+
+        function addText() {
+            if (type == "add") {
+                if (i < 0) {
+                    i = 0
+                }
+                document.getElementById("addAnim").innerHTML += text[i]
+                i++;
+                if (i == text.length) {
+                    type = "remove"
+                    i--;
+                }
+                setTimeout(addText, 500)
+            }
+            else {
+                if (i == 0) {
+                    type = "add"
+                    // i++;
+                    // document.getElementById("addAnim").innerHTML = ''
+
+                }
+                document.getElementById("addAnim").innerHTML = text.slice(0, i)
+                i--;
+                setTimeout(addText, 500)
+            }
+        }
+        addText()
+
+
+
+
+        function checkPassword() {
+            let password = document.getElementById("password")
+            let cpassword = document.getElementById("cpassword")
+
+            if (password.value == cpassword.value) {
+                cpassword.classList.add("success")
+                console.log("Matched")
+            }
+            else {
+                cpassword.classList.add("error")
+                console.log("Does Not Match")
+                cpassword.classList.add("error")
+            }
+        }
+
+        let mode = "hide"
+        function showPassword() {
+            let passwordField = document.getElementById("password")
+            let icon = document.getElementById("pswd-icon")
+
+            if (mode == "hide") {
+                passwordField.setAttribute("type", "text")
+                mode = "show"
+                icon.classList.replace("fa-eye-slash", "fa-eye")
+            }
+            else {
+                passwordField.setAttribute("type", "password")
+                mode = "hide"
+                icon.classList.replace("fa-eye", "fa-eye-slash")
+
+            }
+        }
+
+
+    </script>
+
+
 </body>
 
 </html>
