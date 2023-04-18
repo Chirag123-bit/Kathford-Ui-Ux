@@ -1,0 +1,20 @@
+#todoPage {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    background: #3a7bd5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #3a6073, #3a7bd5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3a6073, #3a7bd5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* padding-bottom: 5rem; */
+}
+
+.todoPageContainer {
+    width: 50%;
+    height: 60vh;
+    border: 5px solid red;
+    margin: auto;
+
+}
