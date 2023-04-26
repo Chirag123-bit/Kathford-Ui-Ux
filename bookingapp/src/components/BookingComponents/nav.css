@@ -1,0 +1,28 @@
+.navbar {
+    background: #10375C;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+}
+
+.highlighted {
+    color: #FF5722;
+}
+
+.nav-link {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}

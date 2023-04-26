@@ -1,0 +1,36 @@
+#introSection {
+    background-image: url("../../images/4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15rem 5rem;
+}
+
+.introText h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    margin-bottom: 1rem;
+}
+
+.introText p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 2rem;
+}
+
+.introText h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: 0.15em;
+    text-decoration-line: underline;
+
+    color: #FF5722;
+}

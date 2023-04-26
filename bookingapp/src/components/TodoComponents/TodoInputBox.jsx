@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const TodoInputBox = () => {
+const TodoInputBox = ({ addTodo }) => {
+  const [task, setTask] = useState("");
+
+  const handleSubmit = () => {
+    if (task != "") {
+      addTodo(task)
+    }
+  }
+
   return (
     <div className="todoInputBox">
-      <input type="text" placeholder='Enter A Task' name="task" />
-      <button>Add</button>
+      <input type="text" placeholder='Enter A Task' name="task"
+        onChange={(e) => { setTask(e.target.value) }}
+      />
+      <button onClick={handleSubmit}>Add</button>
     </div>
   )
 }

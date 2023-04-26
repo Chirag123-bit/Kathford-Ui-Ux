@@ -70,3 +70,11 @@
     cursor: pointer;
     margin-bottom: 1rem;
 }
+
+.completedTodo {
+    background-color: rgba(36, 194, 36, 0.54) !important;
+}
+
+.pendingTodo {
+    background-color: transparent !important;
+}

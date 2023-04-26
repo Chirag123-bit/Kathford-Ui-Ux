@@ -1,9 +1,16 @@
 import React from 'react'
 
-const TodoItem = () => {
+const TodoItem = ({ todo, updateTodo }) => {
     return (
-        <div class="alert alert-primary" role="alert">
-            A simple primary alert—check it out!
+        <div class={
+            todo.status == "completed" ?
+                "alert alert-primary completedTodo" :
+                "alert alert-primary pendingTodo"
+        }
+            role="alert"
+            onClick={() => { updateTodo(todo) }}
+        >
+            {todo.task}
         </div>
 
     )
