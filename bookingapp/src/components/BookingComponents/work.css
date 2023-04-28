@@ -1,0 +1,41 @@
+#howItWorks {
+    background: rgba(255, 87, 34, 0.11);
+    padding: 2rem 0;
+}
+
+#howItWorks h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.step-text h6 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #036FD4;
+    margin-bottom: 0;
+}
+
+.step-text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.step i {
+    font-size: 1.6rem;
+    margin-right: 0.5rem;
+    color: #036FD5;
+}
+
+.step {
+    align-items: center;
+    width: 28%;
+}
