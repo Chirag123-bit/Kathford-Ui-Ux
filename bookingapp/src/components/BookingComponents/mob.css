@@ -1,0 +1,53 @@
+#mobSection {
+    height: 400px;
+    padding: 0;
+    margin-bottom: 5rem;
+    margin-top: 14rem;
+}
+
+#mob-content {
+    background: rgba(255, 87, 34, 0.11);
+    margin-left: auto;
+    width: 75%;
+    height: 100%;
+    display: flex;
+}
+
+#mob-text-container h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    width: 100%;
+}
+
+#mob-text-container p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: #645E5E;
+}
+
+#mob-image-container {
+    width: 40%;
+    position: relative;
+}
+
+#mob-text-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mob-image-container img {
+    width: 100%;
+    position: absolute;
+    bottom: -15px;
+    left: -165px;
+}
